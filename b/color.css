@@ -1,0 +1,20 @@
+.logo {
+  background: rgb(25, 238, 238);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+img {
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+div {
+  background:  rgb(25, 238, 238);
+  width: 136px;
+  height: 1000px;
+}
