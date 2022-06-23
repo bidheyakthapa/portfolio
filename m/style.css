@@ -50,7 +50,25 @@ body {
   height: 400px
 }
 
-.nav-list {
+header{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.nav_list {
   display: flex;
   flex-direction: row;
+  padding: 4px;
+ 
+}
+.nav_item {
+  margin: 10px 8px;
+  text-decoration: none;
+}
+
+.nav_item a{
+  margin: 10px 8px;
+  text-decoration: none;
 }
