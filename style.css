@@ -217,7 +217,7 @@ body {
 }
 .submit input[type="submit"] {
   background-color: green;
-  border-radius: 25px;
+  border-radius: 8px;
   color: white;
   margin-left: 60%;
   padding: 10px;
