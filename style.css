@@ -79,9 +79,8 @@ body {
   object-fit: cover;
   object-position: 0px 0px;
   border-radius: 50%;
-  margin-top: 90px;
-  
-  box-shadow: 0px 15px 20px 10px #e78b51;
+  margin-top: 90px; 
+  box-shadow: 0px 10px 15px 5px #fa6e16;
 }
 .section_subtitle-section_subtitle-intro {
   padding-top: 20%;
@@ -116,7 +115,8 @@ body {
   display: flex;
 }
 .service {
-  margin: 5px;
+  margin: 15px;
+  margin-left: 0px;
   width: 30%;
   text-align: center;
   border-radius: 8px;
@@ -139,7 +139,8 @@ body {
   display: flex;
 }
 .blog {
-  margin: 5px;
+  margin: 15px;
+  margin-left: 0px;
   width: 30%;
   text-align: center;
   border-radius: 8px;
@@ -153,6 +154,12 @@ body {
 .blog p{
   color: #646363;
 }
+.topics{
+  padding: 0px 30px;
+}
+.date{
+  padding: 0px;
+}
 .portfolio {
   display: flex;
   flex-grow: 1;
@@ -162,29 +169,30 @@ body {
 .portfolio img {
   margin-right: 4px;
 }
-
-.work-link {
+.my-works{
+  display: flex;
+}
+.work{
   margin: 15px;
-  width: 100%;
-  text-align: left;
+  margin-left: 0px;
+  width: 30%;
+  text-align: center;
   border-radius: 8px;
   box-shadow: 2px 2px 10px 4px #ebebeb;
-  display: flex;
 }
 .work-link p{
   color: #646363;
 }
 .work img{
-  height: 100%;
-  max-height: 300px;
-  width: 500px;
+  height: 200px;
+  width: 100%;
   border-radius: 8px;
 }
 .topics{
   padding: 0px 30px;
 }
 .lang-used{
-  margin-top: 20%;
+  margin-top: 20px;
 }
 .form {
   margin-left: 10px;
@@ -216,12 +224,13 @@ body {
   background-color: #fa6e16;
   border-radius: 8px;
   color: white;
-  margin-left: 60%;
   padding: 10px;
+  border: none
 }
 .social-list {
   display: flex;
   list-style-type: none;
+  padding-left: 0px;
 }
 .social-list_item {
   padding-right: 20px;
@@ -231,10 +240,11 @@ body {
   width: auto;
 }
 .end{
-  border-top: 1px solid #000000;
-  margin: 10px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 @media screen and (max-width: 800px) {
@@ -259,11 +269,11 @@ body {
     padding: 20px;
   }
   .intro img{
-   width: 100%;
+   width: 100px;
    height: 100px;
    border-radius: 99%;
    margin-top: 100px;
-   object-fit: fill;
+   object-fit: cover;
    object-position: 0px 0px;
   }
   .services {
@@ -281,7 +291,7 @@ body {
     width: 100%;
   }
   .my-works {
-    
+    display: block;
     width: 100%;
   }
   .work {
@@ -289,12 +299,7 @@ body {
   }
   .work img{
     width: 100%;
-   height: 100%;
-   object-fit: cover;
-   object-position: 5px;
-  }
-  .submit input[type="submit"] {
-    margin-left: 75%;
+   height: 150%;
   }
   .contact img {
     display: none;
