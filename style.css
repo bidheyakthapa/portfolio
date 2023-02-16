@@ -111,6 +111,7 @@ body {
 }
 .services {
   display: flex;
+  justify-content: space-evenly;
 }
 .service {
   margin: 15px;
@@ -135,6 +136,7 @@ body {
 }
 .my-blogs{
   display: flex;
+  justify-content: space-evenly;
 }
 .blog {
   margin: 15px;
@@ -169,6 +171,7 @@ body {
 }
 .my-works{
   display: flex;
+  justify-content: space-evenly;
 }
 .work{
   margin: 15px;
@@ -247,7 +250,7 @@ body {
 }
 
 /*  space at the side of content  */
-.nav, .logo, .intro, .social, .about-me, .services, .my-blogs, .my-works, .contact, .section_title, .about-me-body{
+.nav, .logo, .intro, .social, .about-me, .my-services, .my-blogs, .my-works, .my-photo, .contact, .section_title{
   padding: 90px;
   padding-top: 0px;
   padding-bottom: 0px;
