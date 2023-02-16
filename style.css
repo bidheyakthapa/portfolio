@@ -60,10 +60,8 @@ header {
 
 body {
   font-size: 20px;
-  padding: 90px;
   padding-top: 5px;
   display: block;
-  padding-bottom: 5px;
   font-family: "Roboto", sans-serif;
   color: #202020;
 }
@@ -245,7 +243,25 @@ body {
   justify-content: center;
   color: #ffffff;
   background-color: #000000;
+  font-size: 10px;
 }
+
+/*  space at the side of content  */
+.nav, .logo, .intro, .social, .about-me, .my-services, .my-blogs, .my-works, .my-photo, .contact, .section_title{
+  padding: 90px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  
+}
+
+.logo{
+  padding-right: 0px;
+}
+
+.nav{
+  padding-left: 0px;
+}
+
 
 @media screen and (max-width: 800px) {
   header {
@@ -265,9 +281,7 @@ body {
     margin: 0px;
   }
 
-  body {
-    padding: 20px;
-  }
+ 
   .intro img{
    width: 100px;
    height: 100px;
@@ -285,14 +299,14 @@ body {
   }
   .my-blogs {
     display: block;
-    width: 100%;
+   
   }
   .blog {
     width: 100%;
   }
   .my-works {
     display: block;
-    width: 100%;
+    
   }
   .work {
     width: 100%;
@@ -303,5 +317,11 @@ body {
   }
   .contact img {
     display: none;
+  }
+
+  .nav, .logo, .intro, .social, .about-me, .my-services, .my-blogs, .my-works, .my-photo, .contact, .section_title{
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px; 
   }
 }
