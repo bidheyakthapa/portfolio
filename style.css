@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-:root {
+:root{
   --ff-primary: "Source Sans Pro", sans-serif;
   --ff-secondary: "Source Code Pro", monospace;
 
@@ -77,14 +77,14 @@ body {
   object-fit: cover;
   object-position: 0px 0px;
   border-radius: 50%;
-  margin-top: 90px; 
+  margin-top: 90px;
   box-shadow: 0px 10px 15px 5px #fa6e16;
 }
 .section_subtitle-section_subtitle-intro {
   padding-top: 20%;
 }
-.name{
- color: #fa6e16;
+.name {
+  color: #ff6200;
 }
 .section_title {
   margin-top: 70px;
@@ -101,14 +101,35 @@ body {
 }
 
 .nav_link,
-.social-list_link, .blog-link, .work-link {
+.social-list_link,
+.blog-link,
+.work-link {
   text-decoration: none;
   color: #000000;
 }
 .nav_link:hover,
 .social-list_link:hover {
-  color:#fa6e16;
+  color: #ff6200;
 }
+
+.download {
+  margin-top: 10px;
+  margin-left: 90px;
+  border-radius: 60px;
+  padding: 10px;
+  border: 2px solid #f05c00;
+  background-color: #ffffff;
+  color: #f05c00;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.download:hover {
+  color: #ffffff;
+  background-color: #f05c00;
+}
+
 .services {
   display: flex;
   justify-content: space-evenly;
@@ -121,7 +142,7 @@ body {
   border-radius: 8px;
   box-shadow: 2px 2px 10px 4px #ebebeb;
 }
-.service img{
+.service img {
   height: 100%;
   max-height: 200px;
   width: 100%;
@@ -134,7 +155,7 @@ body {
   padding: 0px 20px;
   color: #646363;
 }
-.my-blogs{
+.my-blogs {
   display: flex;
   justify-content: space-evenly;
 }
@@ -146,18 +167,18 @@ body {
   border-radius: 8px;
   box-shadow: 2px 2px 10px 4px #ebebeb;
 }
-.blog img{
+.blog img {
   height: 200px;
   width: 100%;
   border-radius: 8px;
 }
-.blog p{
+.blog p {
   color: #646363;
 }
-.topics{
+.topics {
   padding: 0px 30px;
 }
-.date{
+.date {
   padding: 0px;
 }
 .portfolio {
@@ -169,11 +190,11 @@ body {
 .portfolio img {
   margin-right: 4px;
 }
-.my-works{
+.my-works {
   display: flex;
   flex-wrap: wrap;
 }
-.work{
+.work {
   margin: 15px;
   margin-left: 0px;
   width: 30%;
@@ -181,18 +202,18 @@ body {
   border-radius: 8px;
   box-shadow: 2px 2px 10px 4px #ebebeb;
 }
-.work-link p{
+.work-link p {
   color: #646363;
 }
-.work img{
+.work img {
   height: 200px;
   width: 100%;
   border-radius: 8px;
 }
-.topics{
+.topics {
   padding: 0px 30px;
 }
-.lang-used{
+.lang-used {
   margin-top: 20px;
 }
 .form {
@@ -222,11 +243,11 @@ body {
   max-width: 100%;
 }
 .submit input[type="submit"] {
-  background-color: #fa6e16;
+  background-color: #e45700;
   border-radius: 8px;
   color: white;
   padding: 10px;
-  border: none
+  border: none;
 }
 .social-list {
   display: flex;
@@ -236,11 +257,13 @@ body {
 .social-list_item {
   padding-right: 20px;
 }
+
 .social-list_link > i {
   font-size: 30px;
   width: auto;
 }
-.end{
+
+.end {
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -250,21 +273,29 @@ body {
 }
 
 /*  space at the side of content  */
-.nav, .logo, .intro, .social, .about-me, .my-services, .my-blogs, .my-works, .my-photo, .contact, .section_title{
+.nav,
+.logo,
+.intro,
+.social,
+.about-me,
+.my-services,
+.my-blogs,
+.my-works,
+.my-photo,
+.contact,
+.section_title {
   padding: 90px;
   padding-top: 0px;
   padding-bottom: 0px;
-  
 }
 
-.logo{
+.logo {
   padding-right: 0px;
 }
 
-.nav{
+.nav {
   padding-left: 0px;
 }
-
 
 @media screen and (max-width: 800px) {
   header {
@@ -284,15 +315,21 @@ body {
     margin: 0px;
   }
 
- 
-  .intro img{
-   width: 100px;
-   height: 100px;
-   border-radius: 99%;
-   margin-top: 100px;
-   object-fit: cover;
-   object-position: 0px 0px;
+  .intro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 99%;
+    margin-top: 100px;
+    object-fit: cover;
+    object-position: 0px 0px;
   }
+
+  .download{
+    margin: 0px 20px;
+    font-size: 12px;
+    padding: 7px;
+  }
+
   .services {
     display: block;
     width: 100%;
@@ -302,29 +339,37 @@ body {
   }
   .my-blogs {
     display: block;
-   
   }
   .blog {
     width: 100%;
   }
   .my-works {
     display: block;
-    
   }
   .work {
     width: 100%;
   }
-  .work img{
+  .work img {
     width: 100%;
-   height: 150%;
+    height: 150%;
   }
   .contact img {
     display: none;
   }
 
-  .nav, .logo, .intro, .social, .about-me, .my-services, .my-blogs, .my-works, .my-photo, .contact, .section_title{
+  .nav,
+  .logo,
+  .intro,
+  .social,
+  .about-me,
+  .my-services,
+  .my-blogs,
+  .my-works,
+  .my-photo,
+  .contact,
+  .section_title{
     padding: 20px;
     padding-top: 0px;
-    padding-bottom: 0px; 
+    padding-bottom: 0px;
   }
 }
