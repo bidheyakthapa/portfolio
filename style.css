@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --ff-primary: "Source Sans Pro", sans-serif;
   --ff-secondary: "Source Code Pro", monospace;
 
@@ -40,6 +40,18 @@ header {
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav_list {
@@ -297,7 +309,7 @@ body {
   padding-left: 0px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 810px) {
   header {
     padding: 1px;
   }
@@ -307,9 +319,53 @@ body {
     width: 40px;
   }
 
+  .nav {
+    --gap: 2em;
+    position: fixed;
+    inset: 0 0 0 30%;
+    padding: min(30vh, 10rem) 2em 0 2em;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+    background: hsla(24, 96%, 53%, 0.3);
+    backdrop-filter: blur(1rem);
+  }
+
+  .nav[data-visible="true"] {
+    transform: translateX(0%);
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-nav-toggle {
+    display: block;
+    background: url(images/menu.svg);
+    background-size: contain;
+    position: absolute;
+    z-index: 9999;
+    width: 2rem;
+    aspect-ratio: 1;
+    border: 0;
+    background-color: transparent;
+    right: 2rem;
+  }
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background: url(images/cross.png);
+    position: fixed;
+  }
+
+  .nav_list {
+    display: none;
+  }
+
+  .nav[data-visible="true"] .nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   a.nav_link {
-    font-size: 14px;
+    font-size: 18px;
     margin: 6px;
+    color: #ffffff;
   }
   .nav_item {
     margin: 0px;
@@ -324,7 +380,7 @@ body {
     object-position: 0px 0px;
   }
 
-  .download{
+  .download {
     margin: 0px 20px;
     font-size: 12px;
     padding: 7px;
@@ -357,7 +413,6 @@ body {
     display: none;
   }
 
-  .nav,
   .logo,
   .intro,
   .social,
@@ -367,7 +422,7 @@ body {
   .my-works,
   .my-photo,
   .contact,
-  .section_title{
+  .section_title {
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 0px;

@@ -97,9 +97,17 @@
       <div class="logo">
         <img src="images/photo.jpg" alt="no photo" />
       </div>
-      <nav class="nav">
+      <button
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span></span>
+    </button>
+    <nav>
+      <nav class="nav" id="primary-navigation" data-visible="false">
         <ul class="nav_list">
-          <li class="nav_item"><a href="#home" class="nav_link">HOME</a></li>
+          <li class="nav_item"><a href="#home" class="nav_link"><span data-visible="false">00</span>HOME</a></li>
           <li class="nav_item">
             <a href="#services" class="nav_link">SERVICES </a>
           </li>
