@@ -2,6 +2,9 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --ff-primary: "Source Sans Pro", sans-serif;
@@ -83,6 +86,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .intro img {
   width: 200px;
   height: 200px;
@@ -92,19 +96,28 @@ body {
   margin-top: 90px;
   box-shadow: 0px 10px 15px 5px #fa6e16;
 }
+
 .section_subtitle-section_subtitle-intro {
   padding-top: 20%;
 }
+
 .name {
   color: #ff6200;
 }
+
 .section_title {
   margin-top: 70px;
   font-weight: 300;
 }
+
+.about-me .section_title {
+  margin-left: -90px;
+}
+
 .about p {
   color: #646363;
 }
+
 .portfolio img {
   max-height: 100%;
   max-width: 100%;
