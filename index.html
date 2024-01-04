@@ -93,89 +93,90 @@
   </head>
 
   <body>
-    <header>
-      <div class="logo">
-        <img src="images/photo.jpg" alt="no photo" />
-      </div>
-      <button
-      class="mobile-nav-toggle"
-      aria-controls="primary-navigation"
-      aria-expanded="false"
-    >
-      <span></span>
-    </button>
-    <nav>
-      <nav class="nav" id="primary-navigation" data-visible="false">
-        <ul class="nav_list">
-          <li class="nav_item"><a href="#home" class="nav_link">HOME</a></li>
-          <li class="nav_item">
-            <a href="#about" class="nav_link">ABOUT ME</a>
+    <section class="hero">
+      <header>
+        <div class="logo">
+          <img src="images/photo.png" alt="no photo" />
+        </div>
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        ></button>
+        <nav class="nav" id="primary-navigation" data-visible="false">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="#home" class="nav_link">HOME</a></li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">ABOUT ME</a>
+            </li>
+            <li class="nav_item">
+              <a href="#services" class="nav_link">SERVICES </a>
+            </li>
+            <li class="nav_item">
+              <a href="#work" class="nav_link">MY WORK</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- introduction  -->
+
+      <section class="intro" id="home">
+        <div>
+          <p class="section_subtitle-section_subtitle-intro">
+            FRONT-END DEVELOPER
+          </p>
+          <h1 class="section_title-section_title-intro">
+            Hi, I am <strong class="name">Bidheyak Jung Thapa</strong>
+          </h1>
+          <p>I do many things related to HTML, JS and CSS</p>
+        </div>
+        <div class="img">
+          <img src="images/photo2.jpg" alt="my photo" />
+        </div>
+      </section>
+      <div class="social">
+        <ul class="social-list">
+          <li class="social-list_item">
+            <a
+              class="social-list_link"
+              href="https://www.facebook.com/bidheyak.thapa.338"
+              aria-label="Facebook Link"
+            >
+              <i class="fab fa-facebook"></i
+            ></a>
           </li>
-          <li class="nav_item">
-            <a href="#services" class="nav_link">SERVICES </a>
+
+          <li class="social-list_item">
+            <a
+              class="social-list_link"
+              href="https://www.instagram.com/bidheyak/"
+              aria-label="Instagram Link"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </li>
-          <li class="nav_item"><a href="#work" class="nav_link">MY WORK</a></li>
+          <li class="social-list_item">
+            <a
+              class="social-list_link"
+              href="https://twitter.com/Bidheyak4"
+              aria-label="Twitter Link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="social-list_item">
+            <a
+              class="social-list_link"
+              href="https://github.com/bidheyakthapa"
+              aria-label="Github Link"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
         </ul>
-      </nav>
-    </header>
-
-    <!-- introduction  -->
-    <section class="intro" id="home">
-      <div>
-        <p class="section_subtitle-section_subtitle-intro">
-          FRONT-END DEVELOPER
-        </p>
-        <h1 class="section_title-section_title-intro">
-          Hi, I am <strong class="name">Bidheyak Jung Thapa</strong>
-        </h1>
-        <p>I do many things related to HTML, JS and CSS</p>
       </div>
-      <div>
-        <img src="images/photo2.jpg" alt="my photo" />
-      </div>
+      <button class="download" id="download-btn">
+        Download CV <i class="fa-solid fa-arrow-down"></i>
+      </button>
     </section>
-    <div class="social">
-      <ul class="social-list">
-        <li class="social-list_item">
-          <a
-            class="social-list_link"
-            href="https://www.facebook.com/bidheyak.thapa.338"
-            aria-label="Facebook Link"
-          >
-            <i class="fab fa-facebook"></i
-          ></a>
-        </li>
-
-        <li class="social-list_item">
-          <a
-            class="social-list_link"
-            href="https://www.instagram.com/bidheyak/"
-            aria-label="Instagram Link"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-        <li class="social-list_item">
-          <a
-            class="social-list_link"
-            href="https://twitter.com/Bidheyak4"
-            aria-label="Twitter Link"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-        <li class="social-list_item">
-          <a
-            class="social-list_link"
-            href="https://github.com/bidheyakthapa"
-            aria-label="Github Link"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-      </ul>
-    </div>
-    <button class="download" id="download-btn">
-      Download CV <i class="fa-solid fa-arrow-down"></i>
-    </button>
-
     <!--about me-->
     <h2 class="section_title">WHO I AM?</h2>
     <section class="about-me" id="about">
@@ -295,7 +296,11 @@
         </a>
       </div>
       <div class="work">
-        <a href="https://11trafalgar.netlify.app/" class="work-link">
+        <a
+          href="https://11trafalgar.netlify.app/"
+          class="work-link"
+          target="_blank"
+        >
           <img src="images/trafalgar.JPG" alt="img of work-2" />
 
           <div class="topics">
@@ -309,7 +314,11 @@
         </a>
       </div>
       <div class="work">
-        <a href="https://shoe-hub.netlify.app/" class="work-link">
+        <a
+          href="https://shoe-hub.netlify.app/"
+          class="work-link"
+          target="_blank"
+        >
           <img src="images/shoe-hub.jpg" alt="img of work-3" />
 
           <div class="topics">
@@ -323,7 +332,11 @@
         </a>
       </div>
       <div class="work">
-        <a href="https://college-website-ui.netlify.app/" class="work-link">
+        <a
+          href="https://college-website-ui.netlify.app/"
+          class="work-link"
+          target="_blank"
+        >
           <img src="images/college-clone.JPG" alt="img of work-4" />
 
           <div class="topics">
