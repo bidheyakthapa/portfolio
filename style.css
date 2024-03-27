@@ -47,10 +47,6 @@ header {
   object-fit: cover;
 }
 
-.hero {
-  height: 85dvh;
-}
-
 .mobile-nav-toggle {
   display: none;
 }

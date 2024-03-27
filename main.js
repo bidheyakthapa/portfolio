@@ -29,17 +29,3 @@ navToggle.addEventListener("click", () => {
 
 const imgContainer = document.querySelector(".hero");
 const img = imgContainer.querySelector(".img img");
-
-function shadow(e) {
-  const { width, height, top, left } = imgContainer.getBoundingClientRect();
-  const walk = 30;
-  const x = e.clientX - left;
-  const y = e.clientY - top;
-
-  const xWalk = ((x / width) * walk - walk / 2).toFixed(2);
-  const yWalk = ((y / height) * walk - walk / 2).toFixed(2);
-
-  img.style.boxShadow = `${xWalk}px ${yWalk}px 10px 3px rgba(250, 110, 22, 0.75)`;
-}
-
-imgContainer.addEventListener("mousemove", shadow);
