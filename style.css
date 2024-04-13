@@ -225,12 +225,14 @@ body {
 }
 
 .portfolio img {
-  margin-right: 4px;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .my-works {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .work {
@@ -386,6 +388,7 @@ body {
     border: 0;
     background-color: transparent;
     right: 2rem;
+    cursor: pointer;
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
@@ -400,7 +403,7 @@ body {
   .nav[data-visible="true"] .nav_list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
   }
 
   a.nav_link {
